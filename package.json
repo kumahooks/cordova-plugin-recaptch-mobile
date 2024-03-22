@@ -1,0 +1,26 @@
+{
+  "name": "cordova-plugin-recaptcha-mobile",
+  "version": "1.0.0",
+  "description": "recaptcha integration for ios",
+  "cordova": {
+    "id": "cordova-plugin-recaptcha-mobile",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kumahooks/cordova-plugin-recaptcha-mobile"
+  },
+  "bugs": {
+    "url": "https://github.com/kumahooks/cordova-plugin-recaptcha-mobile/issues"
+  },
+  "author": "kumahooks",
+  "license": "MIT"
+}

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-recaptcha-mobile" version="1.0.0"
+	xmlns="http://apache.org/cordova/ns/plugins/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<name>CordovaRecaptchaMobile</name>
+
+	<js-module name="CordovaRecaptchaMobile" src="www/CordovaRecaptchaMobile.js">
+		<clobbers target="cordova.plugins.CordovaRecaptchaMobile" />
+	</js-module>
+
+	<platform name="android">
+		<config-file parent="/*" target="res/xml/config.xml">
+			<feature name="CordovaRecaptchaMobile">
+				<param name="android-package" value="org.kumahooks.cordovarecaptchamobile.CordovaRecaptchaMobile" />
+			</feature>
+		</config-file>
+
+		<config-file parent="/*" target="AndroidManifest.xml" />
+		<source-file src="src/android/CordovaRecaptchaMobile.java" target-dir="src/org/kumahooks/cordovarecaptchamobile/CordovaRecaptchaMobile" />
+        <framework src="com.google.android.recaptcha:recaptcha:18.5.0-beta01" />
+	</platform>
+
+	<platform name="ios">
+		<config-file parent="/*" target="config.xml">
+			<feature name="CordovaRecaptchaMobile">
+				<param name="ios-package" value="CordovaRecaptchaMobile" />
+			</feature>
+		</config-file>
+
+		<source-file src="src/ios/CordovaRecaptchaMobile.m" />
+	</platform>
+</plugin>
