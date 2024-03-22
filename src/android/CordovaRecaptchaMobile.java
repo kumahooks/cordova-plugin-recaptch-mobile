@@ -1,4 +1,4 @@
-package org.kumahooks.recaptchaios;
+package org.kumahooks.cordovarecaptchamobile;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
