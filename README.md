@@ -10,7 +10,7 @@ cordova plugin add https://github.com/kumahooks/cordova-plugin-recaptcha-mobile
 
 # Usage
 ```ts
-  public async initializeRecaptcha(siteKey) {
+  public async initializeRecaptcha(siteKey: string): Promise<boolean> {
     return new Promise((resolve, reject) => {
       cordova.plugins['CordovaRecaptchaMobile'].initializeRecaptcha(siteKey,
         () => {
